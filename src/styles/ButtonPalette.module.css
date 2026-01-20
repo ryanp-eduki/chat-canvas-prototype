@@ -3,9 +3,9 @@
   justify-content: flex-end;
   align-items: center;
   padding: 12px 20px;
-  background-color: #ffffff;
+  background-color: white;
   border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   z-index: 1000;
 }
 
@@ -36,19 +36,20 @@
   align-items: center;
   gap: 6px;
   padding: 8px 16px;
-  background-color: #f5f5f5;
+  background-color: white;
   border: 1px solid #d0d0d0;
   border-radius: 6px;
   font-size: 14px;
-  color: #333;
+  color: #555;
+  font-weight: 500;
   transition: all 0.2s ease;
 }
 
 .button:hover {
-  background-color: #e8e8e8;
-  border-color: #b0b0b0;
+  background-color: #f8f8f8;
+  border-color: #26BFBF;
+  color: #26BFBF;
   transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .button:active {
@@ -75,26 +76,26 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   padding: 8px 36px 8px 16px;
-  background-color: #f5f5f5;
+  background-color: white;
   border: 1px solid #d0d0d0;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 500;
-  color: #333;
+  color: #555;
   cursor: pointer;
   transition: all 0.2s ease;
   min-width: 100px;
 }
 
 .pageDropdown:hover {
-  background-color: #e8e8e8;
-  border-color: #b0b0b0;
+  background-color: #f8f8f8;
+  border-color: #26BFBF;
 }
 
 .pageDropdown:focus {
   outline: none;
-  border-color: #3498db;
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  border-color: #26BFBF;
+  box-shadow: 0 0 0 2px rgba(38, 191, 191, 0.1);
 }
 
 .dropdownIcon {
