@@ -3,10 +3,12 @@ import { HiDownload } from 'react-icons/hi';
 import { BiEditAlt } from 'react-icons/bi';
 import { IoCopy } from 'react-icons/io5';
 import { IoChevronDown } from 'react-icons/io5';
+import Toast from './Toast';
 import styles from '../styles/ButtonPalette.module.css';
 
 const ButtonPalette = ({ position = 'top' }) => {
   const [selectedPage, setSelectedPage] = useState(1);
+  const [showToast, setShowToast] = useState(false);
 
   const handlePageChange = (e) => {
     const pageNumber = parseInt(e.target.value);
@@ -24,6 +26,7 @@ const ButtonPalette = ({ position = 'top' }) => {
     try {
       const content = document.querySelector('.mockDocument')?.innerText || '';
       await navigator.clipboard.writeText(content);
+      setShowToast(true);
       console.log('Content copied to clipboard');
     } catch (err) {
       console.error('Failed to copy:', err);
@@ -51,8 +54,14 @@ const ButtonPalette = ({ position = 'top' }) => {
   };
 
   return (
-    <div className={`${styles.buttonPalette} ${styles[position]}`}>
-      <div className={styles.buttonGroup}>
+    <>
+      <Toast
+        message="Copied text to clipboard!"
+        isVisible={showToast}
+        onClose={() => setShowToast(false)}
+      />
+      <div className={`${styles.buttonPalette} ${styles[position]}`}>
+        <div className={styles.buttonGroup}>
         <div className={styles.pageSelector}>
           <select
             value={selectedPage}
@@ -95,6 +104,7 @@ const ButtonPalette = ({ position = 'top' }) => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 

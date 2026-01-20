@@ -11,30 +11,30 @@ const ContentPreview = () => {
           <div className={styles.pageNumber}>Page 1 of 4</div>
           <div className={styles.page}>
           <div className={styles.documentHeader}>
-            <h1>Photosynthese: Wie Pflanzen atmen</h1>
+            <h1>Photosynthesis: How Plants Breathe</h1>
             <div className={styles.metadata}>
               <span>Name: _________________</span>
-              <span>Datum: _________________</span>
+              <span>Date: _________________</span>
             </div>
           </div>
 
           <div className={styles.sections}>
             <div className={styles.section}>
               <div className={styles.sectionNumber}>1</div>
-              <h3>Wähle das richtige Antwort aus:</h3>
-              <p>Was produzieren Pflanzen während der Photosynthese?</p>
+              <h3>Choose the correct answer:</h3>
+              <p>What do plants produce during photosynthesis?</p>
               <div className={styles.options}>
-                <p>A) Käse und Brot</p>
-                <p>B) Sauerstoff und Zucker</p>
-                <p>C) Sterne und Sand</p>
-                <p>D) Nur Wasser</p>
+                <p>A) Cheese and bread</p>
+                <p>B) Oxygen and sugar</p>
+                <p>C) Stars and sand</p>
+                <p>D) Only water</p>
               </div>
             </div>
 
             <div className={styles.section}>
               <div className={styles.sectionNumber}>2</div>
-              <h3>Fülle die Lücken aus:</h3>
-              <p>Pflanzen brauchen drei wichtige Dinge für die Photosynthese:</p>
+              <h3>Fill in the blanks:</h3>
+              <p>Plants need three important things for photosynthesis:</p>
               <div className={styles.blanks}>
                 <p>1. _________________</p>
                 <p>2. _________________</p>
@@ -44,12 +44,12 @@ const ContentPreview = () => {
 
             <div className={styles.section}>
               <div className={styles.sectionNumber}>3</div>
-              <h3>Richtig oder Falsch?</h3>
+              <h3>True or False?</h3>
               <div className={styles.statements}>
-                <p>___ Pflanzen machen nachts Photosynthese</p>
-                <p>___ Chlorophyll macht die Blätter grün</p>
-                <p>___ Ohne Pflanzen hätten wir keinen Sauerstoff</p>
-                <p>___ Pflanzen essen Insekten als Hauptnahrung</p>
+                <p>___ Plants do photosynthesis at night</p>
+                <p>___ Chlorophyll makes leaves green</p>
+                <p>___ Without plants we would have no oxygen</p>
+                <p>___ Plants eat insects as their main food</p>
               </div>
             </div>
           </div>
@@ -65,36 +65,36 @@ const ContentPreview = () => {
               <div className={styles.plant}>
                 <div className={styles.sun}>☀️</div>
                 <div className={styles.plantPot}>🌱</div>
-                <p className={styles.caption}>Eine Pflanze bei der Photosynthese</p>
+                <p className={styles.caption}>A plant during photosynthesis</p>
               </div>
             </div>
 
             <div className={styles.section}>
               <div className={styles.sectionNumber}>4</div>
-              <h3>Verbinde, was zusammengehört:</h3>
+              <h3>Match what belongs together:</h3>
               <div className={styles.matching}>
                 <div className={styles.column}>
-                  <p>• Wurzeln</p>
-                  <p>• Blätter</p>
+                  <p>• Roots</p>
+                  <p>• Leaves</p>
                   <p>• Chlorophyll</p>
-                  <p>• Stengel</p>
+                  <p>• Stem</p>
                 </div>
                 <div className={styles.column}>
-                  <p>• Fangen Licht</p>
-                  <p>• Saugen Wasser</p>
-                  <p>• Grüner Farbstoff</p>
-                  <p>• Transportiert Stoffe</p>
+                  <p>• Capture light</p>
+                  <p>• Absorb water</p>
+                  <p>• Green pigment</p>
+                  <p>• Transport substances</p>
                 </div>
               </div>
             </div>
 
             <div className={styles.section}>
               <div className={styles.sectionNumber}>5</div>
-              <h3>Bringe die Schritte in Ordnung (1-3):</h3>
+              <h3>Put the steps in order (1-3):</h3>
               <div className={styles.ordering}>
-                <p>___ Die Pflanze stellt Zucker und Sauerstoff her.</p>
-                <p>___ Die Wurzeln nehmen Wasser aus dem Boden auf.</p>
-                <p>___ Die Blätter fangen die Energie der Sonne ein.</p>
+                <p>___ The plant produces sugar and oxygen.</p>
+                <p>___ The roots take up water from the soil.</p>
+                <p>___ The leaves capture the sun's energy.</p>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ const ContentPreview = () => {
           <div className={styles.sections}>
             <div className={styles.section}>
               <div className={styles.sectionNumber}>6</div>
-              <h3>Erkläre: Warum ist die Photosynthese für uns Menschen so wichtig?</h3>
+              <h3>Explain: Why is photosynthesis important for humans?</h3>
               <div className={styles.writingArea}>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
@@ -123,10 +123,10 @@ const ContentPreview = () => {
 
             <div className={styles.section}>
               <div className={styles.sectionNumber}>7</div>
-              <h3>Zeichne eine Pflanze und beschrifte:</h3>
+              <h3>Draw and label a plant:</h3>
               <div className={styles.drawingArea}>
                 <div className={styles.drawingBox}>
-                  <p className={styles.drawingPrompt}>Zeichne hier eine Pflanze und beschrifte: Wurzeln, Stengel, Blätter, Blüte</p>
+                  <p className={styles.drawingPrompt}>Draw a plant here and label: roots, stem, leaves, flower</p>
                 </div>
               </div>
             </div>
@@ -141,17 +141,17 @@ const ContentPreview = () => {
           <div className={styles.sections}>
             <div className={styles.section}>
               <div className={styles.sectionNumber}>8</div>
-              <h3>Bonus: Forscherfragen</h3>
+              <h3>Bonus: Research Questions</h3>
               <div className={styles.bonusQuestions}>
-                <p><strong>1.</strong> Warum sind die meisten Pflanzen grün?</p>
+                <p><strong>1.</strong> Why are most plants green?</p>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
 
-                <p><strong>2.</strong> Was würde passieren, wenn es keine Sonne gäbe?</p>
+                <p><strong>2.</strong> What would happen if there was no sun?</p>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
 
-                <p><strong>3.</strong> Können Pflanzen im Dunkeln wachsen?</p>
+                <p><strong>3.</strong> Can plants grow in the dark?</p>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
               </div>
@@ -159,20 +159,20 @@ const ContentPreview = () => {
 
             <div className={styles.section}>
               <div className={styles.sectionNumber}>9</div>
-              <h3>Selbstreflexion:</h3>
+              <h3>Self-Reflection:</h3>
               <div className={styles.reflection}>
-                <p>Was hast du heute über Photosynthese gelernt?</p>
+                <p>What did you learn about photosynthesis today?</p>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
-                <p>Was fandest du am interessantesten?</p>
+                <p>What did you find most interesting?</p>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
               </div>
             </div>
 
             <div className={styles.footer}>
-              <p className={styles.endNote}>🌿 Gut gemacht! 🌿</p>
+              <p className={styles.endNote}>🌿 Great work! 🌿</p>
             </div>
           </div>
           </div>
