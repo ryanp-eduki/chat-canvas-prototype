@@ -1,5 +1,5 @@
 .chatWindow {
-  width: 380px;
+  width: 300px;
   min-height: 500px;
   max-height: 66vh;
   background-color: #FFFDF6;
@@ -9,9 +9,9 @@
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 20px;
+  top: 10px;
   align-self: flex-start;
-  margin: 20px 0 20px 20px;
+  margin: 10px 0 10px 5px;
   flex-shrink: 0;
 }
 
@@ -168,13 +168,13 @@
 }
 
 /* Responsive design */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .chatWindow {
-    width: 320px;
+    width: 280px;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .chatWindow {
     position: fixed;
     width: 100%;
@@ -184,5 +184,6 @@
     border-left: none;
     border-top: 1px solid #e0e0e0;
     z-index: 1500;
+    margin: 0;
   }
 }

@@ -1,15 +1,15 @@
 .sidebar {
-  width: 280px;
+  width: 240px;
   background-color: #FFFDF6;
   border-right: 1px solid #e5e5e5;
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 20px;
+  top: 10px;
   align-self: flex-start;
-  margin: 20px 20px 20px 0;
+  margin: 10px 5px 10px 0;
   flex-shrink: 0;
-  max-height: calc(100vh - 40px);
+  max-height: calc(100vh - 20px);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   overflow: hidden;
@@ -155,7 +155,7 @@
 /* Responsive design */
 @media screen and (max-width: 1400px) {
   .sidebar {
-    width: 240px;
+    width: 220px;
   }
 }
 
