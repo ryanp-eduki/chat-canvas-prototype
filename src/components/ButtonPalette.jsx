@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HiDownload } from 'react-icons/hi';
 import { BiEditAlt } from 'react-icons/bi';
 import { IoCopy } from 'react-icons/io5';
@@ -6,9 +6,14 @@ import { IoChevronDown } from 'react-icons/io5';
 import Toast from './Toast';
 import styles from '../styles/ButtonPalette.module.css';
 
-const ButtonPalette = ({ position = 'top' }) => {
+const ButtonPalette = ({ position = 'top', totalPages = 4 }) => {
   const [selectedPage, setSelectedPage] = useState(1);
   const [showToast, setShowToast] = useState(false);
+
+  // Reset to page 1 when totalPages changes (document switch)
+  useEffect(() => {
+    setSelectedPage(1);
+  }, [totalPages]);
 
   const handlePageChange = (e) => {
     const pageNumber = parseInt(e.target.value);
@@ -68,10 +73,11 @@ const ButtonPalette = ({ position = 'top' }) => {
             onChange={handlePageChange}
             className={styles.pageDropdown}
           >
-            <option value={1}>Page 1</option>
-            <option value={2}>Page 2</option>
-            <option value={3}>Page 3</option>
-            <option value={4}>Page 4</option>
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <option key={page} value={page}>
+                Page {page} of {totalPages}
+              </option>
+            ))}
           </select>
           <IoChevronDown className={styles.dropdownIcon} />
         </div>

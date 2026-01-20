@@ -13,6 +13,13 @@ const ChatCanvas = () => {
   const [activeDocument, setActiveDocument] = useState('primary');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const documentPageCounts = {
+    'primary': 4,
+    'quiz': 2,
+    'lesson-plan': 3,
+    'answer-key': 2
+  };
+
   const renderContent = () => {
     switch (activeDocument) {
       case 'primary':
@@ -37,7 +44,10 @@ const ChatCanvas = () => {
           onAddDocument={() => setIsModalOpen(true)}
         />
         <div className={styles.canvasWrapper}>
-          <ButtonPalette position="top" />
+          <ButtonPalette
+            position="top"
+            totalPages={documentPageCounts[activeDocument]}
+          />
           {renderContent()}
         </div>
         <ChatWindow />
